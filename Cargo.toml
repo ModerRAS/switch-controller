@@ -23,8 +23,13 @@ default = []
 experimental = ["esp-idf-svc/experimental"]
 
 [dependencies]
-log = "0.4"
-esp-idf-svc = "0.51"
+log = { version = "0.4", default-features = false }
+esp-idf-svc = "0.51.0"
+mcp23017 = "1.1.0"
+esp-idf-hal = "0.45.2"
+anyhow = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
 
 # --- Optional Embassy Integration ---
 # esp-idf-svc = { version = "0.51", features = ["critical-section", "embassy-time-driver", "embassy-sync"] }

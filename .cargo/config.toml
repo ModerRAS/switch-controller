@@ -1,5 +1,6 @@
 [build]
 target = "riscv32imac-esp-espidf"
+target-dir = "C:/rust-esp-target/switch-controller"
 
 [target.riscv32imac-esp-espidf]
 linker = "ldproxy"
